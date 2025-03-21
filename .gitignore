@@ -2,7 +2,6 @@ checkpoints*
 risultati_*
 results_*
 *__pycache_*
-data/
 wandb/
 .vscode-upload.json
 catboost_info

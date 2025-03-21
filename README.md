@@ -1,5 +1,3 @@
-# Under construction
-
 # One Transformer for All Time Series: Representing and Training with Time-Dependent Heterogeneous Tabular Data
 Official PyTorch implementaton of paper One Transformer for All Time Series: Representing and Training with Time-Dependent Heterogeneous Tabular Data.  
 
