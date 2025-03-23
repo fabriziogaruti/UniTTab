@@ -64,11 +64,24 @@ python main_fraud_lstm.py \
             --finetuning_experiment_name="fraud_lstm_10" \
             --regression=true \
             --use_embeddings=true
+python main_fraud_finetuning.py \
+            --data_fname="card_transaction.v1" \
+            --finetuning_output_dir=$OUTPUT_DIR \
+            --finetuning_experiment_name="fraud_finetuning_10" \
+            --regression=true \
+            --use_embeddings=true
 
 python main_fraud_lstm.py \
             --data_fname="card_transaction_50trans" \
             --finetuning_output_dir=$OUTPUT_DIR \
             --finetuning_experiment_name="fraud_lstm_50" \
+            --regression=true \
+            --use_embeddings=true \
+            --batch_size=20
+python main_fraud_finetuning.py \
+            --data_fname="card_transaction_50trans" \
+            --finetuning_output_dir=$OUTPUT_DIR \
+            --finetuning_experiment_name="fraud_finetuning_50" \
             --regression=true \
             --use_embeddings=true \
             --batch_size=20
@@ -91,3 +104,37 @@ python main_age2_finetuning.py \
             --regression=true \
             --use_embeddings=true \
             --batch_size=20
+
+
+
+### LOAN DATASET ###
+
+python main_loan_finetuning.py \
+            --finetuning_output_dir=$OUTPUT_DIR \
+            --finetuning_experiment_name="loan_finetuning_50" \
+            --seq_len=50 \
+            --finetuning_test_split_percentage=0.3 \
+            --regression=true \
+            --use_splitted_timestamp=true \
+            --use_embeddings=true \
+            --weighted_loss=true
+
+python main_loan_finetuning.py \
+            --finetuning_output_dir=$OUTPUT_DIR \
+            --finetuning_experiment_name="loan_finetuning_100" \
+            --seq_len=100 \
+            --finetuning_test_split_percentage=0.3 \
+            --regression=true \
+            --use_splitted_timestamp=true \
+            --use_embeddings=true \
+            --weighted_loss=true
+
+python main_loan_finetuning.py \
+            --finetuning_output_dir=$OUTPUT_DIR \
+            --finetuning_experiment_name="loan_finetuning_150" \
+            --seq_len=150 \
+            --finetuning_test_split_percentage=0.3 \
+            --regression=true \
+            --use_splitted_timestamp=true \
+            --use_embeddings=true \
+            --weighted_loss=true
