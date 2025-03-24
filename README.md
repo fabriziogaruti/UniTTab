@@ -7,4 +7,4 @@ In this paper we propose UniTTab, a Transformer based architecture whose goal is
 Using extensive experiments with five datasets of variable size and complexity, we empirically show that UniTTab consistently and significantly improves the prediction accuracy over several downstream tasks and with respect to both Deep Learning and more standard Machine Learning approaches.
 
 ## Experiments
-Use "run_all_experiments.sh": bash script that contains the commands to launch from terminal the different experiments.
+Use "run_all_experiments.sh". This is the bash script that contains the commands to launch from terminal the different experiments.

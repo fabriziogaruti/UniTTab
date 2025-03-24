@@ -1,2 +1,2 @@
 # Data folder
-Place here the public datasets
+Place here the public datasets.
